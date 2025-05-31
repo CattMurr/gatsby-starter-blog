@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `CyberLaw Chronicles`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `CyberSec Legal Expert`,
+      summary: `exploring the intersection of cybersecurity, hacking ethics, and digital law.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A cutting-edge blog covering cybersecurity law, ethical hacking, digital rights, and the legal implications of our connected world.`,
+    siteUrl: `https://cyberlaw-chronicles.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `cyberlawchronicles`,
     },
   },
   plugins: [
