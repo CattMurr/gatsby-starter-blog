@@ -9,57 +9,57 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `CyberLaw Chronicles`,
+    title: "CyberLaw Chronicles",
     author: {
-      name: `CyberSec Legal Expert`,
-      summary: `exploring the intersection of cybersecurity, hacking ethics, and digital law.`,
+      name: "CyberSec Legal Expert",
+      summary: "exploring the intersection of cybersecurity, hacking ethics, and digital law.",
     },
-    description: `A cutting-edge blog covering cybersecurity law, ethical hacking, digital rights, and the legal implications of our connected world.`,
-    siteUrl: `https://cyberlaw-chronicles.netlify.app/`,
+    description: "A cutting-edge blog covering cybersecurity law, ethical hacking, digital rights, and the legal implications of our connected world.",
+    siteUrl: "https://cyberlaw-chronicles.netlify.app/",
     social: {
-      twitter: `cyberlawchronicles`,
+      twitter: "cyberlawchronicles",
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
+    "gatsby-plugin-image",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
+        name: "blog",
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
+        name: "images",
         path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 630,
             },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: "gatsby-remark-responsive-iframe",
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: "margin-bottom: 1.0725rem",
             },
           },
-          `gatsby-remark-prismjs`,
+          "gatsby-remark-prismjs",
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: "gatsby-plugin-feed",
       options: {
         query: `
           {
@@ -108,17 +108,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
-        start_url: `/`,
-        background_color: `#ffffff`,
+        name: "Gatsby Starter Blog",
+        short_name: "Gatsby",
+        start_url: "/",
+        background_color: "#ffffff",
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        display: "minimal-ui",
+        icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },
     },
   ],
